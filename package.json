@@ -1,5 +1,5 @@
 {
-  "name": "resizable-columns",
+  "name": "react-resizable-columns",
   "version": "1.0.0",
   "description": "resizable columns",
   "main": "dist/index.js",
