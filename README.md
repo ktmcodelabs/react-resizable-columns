@@ -1,6 +1,8 @@
 # react-resizable-columns
 React JS re-sizable columns component for re-sizable sidebar
 
+**DEMO** [https://ktmcodelabs.github.io/react-resizable-columns/](https://ktmcodelabs.github.io/react-resizable-columns/)
+
 # USAGE
 ```jsx harmony
 var ResizableColumns = require("react-resizable-columns")
