@@ -1,6 +1,6 @@
 {
   "name": "react-resizable-columns",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "resizable columns",
   "main": "dist/index.js",
   "scripts": {
@@ -12,6 +12,14 @@
     "deploy": "gh-pages -d examples/dist",
     "publish-demo": "npm run build && npm run deploy"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktmcodelabs/react-resizable-columns.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ktmcodelabs/react-resizable-columns/issues"
+  },
+  "homepage": "https://github.com/ktmcodelabs/react-resizable-columns#readme",
   "keywords": ["resize","columns","react js","react","resizable column","resize column"],
   "author": "ktmcodelabs",
   "license": "ISC",
