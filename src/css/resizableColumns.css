@@ -26,9 +26,9 @@
     cursor: w-resize;
     z-index: 1000;
     height: 100%;
-    background: #aaaaaa20; }
+    background: #aaaaaa50; }
     #colResizeWrapper .colResizeHandle:hover {
-      background: #aaaaaa50; }
+      background: #aaaaaa99; }
 
 .demo .topbar {
   position: fixed;
