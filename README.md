@@ -14,5 +14,5 @@ var ResizableColumns = require("react-resizable-columns")
 
 **react-resizable-columns** supports two columns resizable horizontally.
 
-#CONTRIBUTING
+# CONTRIBUTING
 Patches Welcome

@@ -28,7 +28,8 @@
     height: 100%;
     background: #aaaaaa50; }
     #colResizeWrapper .colResizeHandle:hover {
-      background: #aaaaaa99; }
+      background: #aaaaaa99;
+      width: 12px; }
 
 .demo .topbar {
   position: fixed;
@@ -48,5 +49,7 @@
   width: calc(100vw - 300px);
   overflow: hidden;
   margin: 50px auto 0; }
+.demo .colResizeHandle {
+  background: #00ff0060 !important; }
 
 /*# sourceMappingURL=resizableColumns.css.map */

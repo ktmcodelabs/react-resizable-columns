@@ -39,6 +39,7 @@
 
     &:hover {
       background: #aaaaaa99;
+      width: 12px;
     }
   }
 }
@@ -68,5 +69,9 @@
     width: calc(100vw - 300px);
     overflow:hidden;
     margin: 50px auto 0;
+  }
+
+  .colResizeHandle{
+    background: #00ff0060 !important;
   }
 }
