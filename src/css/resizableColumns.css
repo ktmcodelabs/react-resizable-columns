@@ -7,14 +7,15 @@
     left: 0;
     position: absolute;
     top: 0;
-    bottom: 0; }
+    bottom: 0;
+    overflow-y: auto; }
   #colResizeWrapper .colResizeRight {
     right: 0;
     background: #fff;
     position: absolute;
     top: 0;
     bottom: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     border-left: solid 4px transparent; }
   #colResizeWrapper .colResizeFullCol {
     width: 100vw; }

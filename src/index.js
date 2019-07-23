@@ -47,26 +47,21 @@ class ResizableColumns extends React.Component {
 
     render() {
         if (this.props.children)
-            return <div className={'demo'}>
-                <div className={'topbar'}>Top Bar</div>
-                <div className={'sidebar'}> Side bar</div>
-                <div className={'container'}>
-                    <div className={'colResizeWrapper'} id={'colResizeWrapper'}>
-                        <div className={'colResizeLeft'}
-                             style={{right: this.state.offset}}>
-                            <div className={'colResizeFullCol'}>
-                                {this.props.children[0]}
-                            </div>
-                        </div>
-                        <div className={'colResizeRight'} style={{width: this.state.offset}}>
-                            <div className={'colResizeHandle'}></div>
-                            <div style={{overflowY: 'auto'}}>
-                                {this.props.children[1]}
-                            </div>
-                        </div>
+            return <div className={'colResizeWrapper'} id={'colResizeWrapper'}>
+                <div className={'colResizeLeft'}
+                     style={{right: this.state.offset}}>
+                    <div className={'colResizeFullCol'}>
+                        {this.props.children[0]}
+                    </div>
+                </div>
+                <div className={'colResizeRight'} style={{width: this.state.offset}}>
+                    <div className={'colResizeHandle'}></div>
+                    <div style={{overflowY: 'auto'}}>
+                        {this.props.children[1]}
                     </div>
                 </div>
             </div>
+
         else
             return <React.Fragment/>
     }
