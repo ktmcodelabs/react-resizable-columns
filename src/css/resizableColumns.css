@@ -47,7 +47,7 @@
   background: #ccc;
   float: left; }
 .demo .container {
-  width: calc(100vw - 300px);
+  width: 100%;
   overflow: hidden;
   margin: 50px auto 0; }
 .demo .colResizeHandle {

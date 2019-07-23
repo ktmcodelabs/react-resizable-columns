@@ -5,7 +5,6 @@ import ResizableColumns from './../../src';
 const App = () => (
     <div className={'demo'}>
         <div className={'topbar'}>Top Bar</div>
-        <div className={'sidebar'}> Side bar</div>
         <div className={'container'}>
             <ResizableColumns>
                 <div>
@@ -64,7 +63,7 @@ const App = () => (
                         aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
                         clita
                         kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                  
+
 
                 </div>
             </ResizableColumns>
