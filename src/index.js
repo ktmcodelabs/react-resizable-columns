@@ -9,9 +9,10 @@ class ResizableColumns extends React.Component {
             isResizing: false,
             lastDownX: 0,
             offset: 0,
-            minOffset:300
+            minOffset: 300
         }
     }
+
     componentDidMount() {
         let handle = document.querySelector('.colResizeHandle')
         let container = document.getElementById('colResizeWrapper')
@@ -33,7 +34,7 @@ class ResizableColumns extends React.Component {
             if (!self.state.isResizing) return;
             let offset = container.offsetWidth - (e.clientX - container.offsetLeft);
             self.setState({
-                offset:offset <= self.state.minOffset ? self.state.minOffset:offset
+                offset: offset <= self.state.minOffset ? self.state.minOffset : offset
             })
 
         })
@@ -43,18 +44,27 @@ class ResizableColumns extends React.Component {
             })
         });
     }
+
     render() {
         if (this.props.children)
-            return <div className={'colResizeWrapper'} id={'colResizeWrapper'}>
-                <div className={'colResizeLeft'}
-                     style={{right: this.state.offset}}>
-                    <div className={'colResizeFullCol'}>
-                        {this.props.children[0]}
+            return <div className={'demo'}>
+                <div className={'topbar'}>Top Bar</div>
+                <div className={'sidebar'}> Side bar</div>
+                <div className={'container'}>
+                    <div className={'colResizeWrapper'} id={'colResizeWrapper'}>
+                        <div className={'colResizeLeft'}
+                             style={{right: this.state.offset}}>
+                            <div className={'colResizeFullCol'}>
+                                {this.props.children[0]}
+                            </div>
+                        </div>
+                        <div className={'colResizeRight'} style={{width: this.state.offset}}>
+                            <div className={'colResizeHandle'}></div>
+                            <div style={{overflowY: 'auto'}}>
+                                {this.props.children[1]}
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className={'colResizeRight'} style={{width: this.state.offset}}>
-                    <div className={'colResizeHandle'}></div>
-                    {this.props.children[1]}
                 </div>
             </div>
         else
